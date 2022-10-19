@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>취업 정보 계정 만들기</title>
+    <style>
+        #need {color: red; font-size:10pt;}
+        .title {
+            font-weight:bold;
+            background-color: lightblue;
+            width: 800px;
+            padding-left: 10px;
+        }
+        a {
+            margin-left: 8px;
+            text-align: right;
+            width: 130px;
+            padding-right: 8px;
+            display: inline-block;
+        }
+        span {color: red;}
+        #bottom {
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>취업 정보 계정 만들기</h3>
+
+    <div id="need">* 필수 입력 항목</div>
+    <br>
+
+    <div class = "title">기본 정보</div>
+    <br>
+    <div><a>이름<span>*</span></a>   <input type="text" size="8"></div>
+    <div><a>이메일<span>*</span></a>    <input type="email" size="15" placeholder="id@domain_name"></div>
+    <div><a>암호<span>*</span></a>       <input type="password" size="12"></div>
+    <div><a>암호 확인<span>*</span></a>     <input type="password" size="12"></div>
+    <div><a>모바일 폰<span>*</span></a>    <input type="tel" size="13" placeholder="010-0000-0000"></div>
+    <div><a>개인 홈페이지</a>  <input type="url" size="30" placeholder="http://"></div>
+    <div><a>이름<span>*</span></a>        <input type="text" size="30"></div>
+    <br>
+
+    <div class = "title">학력</div>
+    <br>
+    <div><a>학교 명<span>*</span></a>   <input type="text" size="12"></div>
+    <div><a>전 공<span>*</span></a>      <input type="text" size="12"></div>
+    <div><a>졸업 여부<span>*</span></a>
+        <select name="grad">
+            <option value="1" selected>---선택---</option>
+            <option value="2">졸업예정</option>
+            <option value="3">졸업</option>
+        </select></div>
+    <div><a>졸업(예정)일</a>   <input type="date"></div>
+    <br>
+
+    <div class = "title">업무 경력</div>
+    <br>
+    <div><a>근무업체명</a>     <input type="text" size="20"></div>
+    <div><a>직 위</a>          <input type="text" size="10"></div>
+    <div><a>담당 업무</a>
+        <textarea cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.</textarea></div>
+    <div><a>근무년수</a>
+        <input type="number" min="0.0" max="10.-" step="0.5">년</div>
+    <br>
+
+    <div class = "title">자기소개서 </div><br>
+    <div><a>첨부파일</a>    <input type="file" value="파일 선택"></div>
+    <div id="bottom">
+        <input type="submit" value="제출">
+        <input type="reset" value="재작성">
+    </div>
+</body>
+</html>
