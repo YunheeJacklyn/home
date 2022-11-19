@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2진수를 16진수로 변환하기</title>
+    <script>
+        function bToH(bnum) {
+            //2진수를 10진수로
+            var len = bnum.length;
+            var i = 0, dnum = 0;
+            while (i < len) {
+                var d = bnum.substring(i, i + 1);
+                d = parseInt(d);
+                dnum += d * Math.pow(2, len - i - 1);
+                i++;
+            }
+
+            //document.write("10진수 = ", dnum, "<br>");
+
+
+            //10진수를 16진수로
+            var h = dnum;
+            var digit = "0123456789ABCDEF";
+            var hnum = [];
+
+            while (h >= 16) {
+                if (h < 256)
+                    hnum.unshift(digit[parseInt(h/16)], digit[h%16]); //unshift = 배열 맨앞에 값 추가하기
+                else
+                    hnum.unshift(digit[h%16]);
+
+                h = parseInt(h/16);
+            }
+
+            document.write("2진수를 16진수로 하면 '")
+            for (index in hnum) {
+                document.write(hnum[index]);
+            }
+            document.write("'이다.")
+        }
+    </script>
+</head>
+<body>
+<h3>2진수를 입력받아 16진수로 출력하기</h3>
+<hr>
+<script>
+    var bnum = prompt("이진수를 입력하세요.", "");
+    bToH(bnum);
+</script>
+</body>
+</html>
