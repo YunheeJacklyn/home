@@ -23,20 +23,23 @@
             var digit = "0123456789ABCDEF";
             var hnum = [];
 
-            while (h >= 16) {
-                if (h < 256)
-                    hnum.unshift(digit[parseInt(h/16)], digit[h%16]); //unshift = 배열 맨앞에 값 추가하기
-                else
-                    hnum.unshift(digit[h%16]);
+            if (h<16)
+                hnum = digit[h];
+            else
+                while (h >= 16) {
+                    if (h < 256)
+                        hnum.unshift(digit[parseInt(h/16)], digit[h%16]); //unshift = 배열 맨앞에 값 추가하기
+                    else
+                        hnum.unshift(digit[h%16]);
 
-                h = parseInt(h/16);
-            }
+                    h = parseInt(h/16);
+               }
 
-            document.write("2진수를 16진수로 하면 '")
+            document.write("2진수를 16진수로 하면 '");
             for (index in hnum) {
                 document.write(hnum[index]);
             }
-            document.write("'이다.")
+            document.write("'이다.");
         }
     </script>
 </head>

@@ -1,0 +1,55 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+header {
+    width: 80%;
+    height: 10%;
+    padding: 0.3em;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav {
+    width: 80%;
+    height: 5%;
+    /*float: right;
+    margin: 1em;*/
+    text-align: right;
+    color: greenyellow;
+    text-decoration: none;
+}
+
+nav .menu {
+    color: greenyellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+aside {
+    float: right;
+    width: 20%;
+    height: 75%;
+    /* 제일 위로 올릴거임 그럼 height도 변경됨*/
+}
+
+aside .subject {
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px gray;
+}
+
+section {
+    width: 80%;
+    height: 75%;
+    float: right;
+    background-color: green;
+}
+
+footer {
+    width: 100%;
+    height: 10%;
+    clear: both;
+    background-color: greenyellow;
+}
