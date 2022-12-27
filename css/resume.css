@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+.container {
+  width: 700px;
+  background-color: whitesmoke;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+h2 {
+  text-shadow: 2px 2px 3px gray;
+  color: white;
+}
+.info {
+  height: 150px;
+  padding: 2% 10%;
+}
+img {
+  float: left;
+  width: 160px;
+  height: 170px;
+}
+
+.aboutme {
+  margin: 2.5em;
+}
+
+.edu {
+  margin: 2em;
+}
+
+.edu span {
+  align-content: center;
+}
+
+.certificates {
+  margin: 2em;
+}
+
+th {
+  background-color: lightgray;
+  color: white;
+  padding: 7px;
+}
+td {
+  border-top: 1px solid lightgray;
+  height: 20px;
+  width: 120px;
+  font-size: 13px;
+}
+
+.awards {
+  margin: 2em;
+}
+
+.skills {
+  margin: 2em;
+  padding-bottom: 1em;
+}
