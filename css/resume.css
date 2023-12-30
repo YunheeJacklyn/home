@@ -54,6 +54,13 @@ td {
   font-size: 13px;
 }
 
+.global th {
+  background-color: gray;
+}
+.global td {
+  text-align: center;
+}
+
 .portfolio {
   margin: 2em;
   padding-bottom: 2em;
